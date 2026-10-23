@@ -89,11 +89,18 @@ N_{K/\mathbb Q}(\alpha),
 \mathrm{Tr}_{K/\mathbb Q}(\alpha).
 $$
 
-Para expresiones cortas dentro del texto se utilizará notación matemática en línea. Por ejemplo:
+### Inline mathematics
+
+Para expresiones cortas dentro del texto se utilizará notación matemática en línea.
+
+**Resultado:**
+
+Sea $K/\mathbb Q$ una extensión finita.
+
+**Markdown:**
 
 ```markdown
 Sea $K/\mathbb Q$ una extensión finita.
-```
 
 Para expresiones destacadas se utilizarán bloques matemáticos:
 
