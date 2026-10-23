@@ -86,7 +86,7 @@ La norma y la traza se escribirán como:
 $$
 N_{K/\mathbb Q}(\alpha),
 \qquad
-\operatorname{Tr}_{K/\mathbb Q}(\alpha).
+\mathrm{Tr}_{K/\mathbb Q}(\alpha).
 $$
 
 Para expresiones cortas dentro del texto se utilizará notación matemática en línea. Por ejemplo:
