@@ -66,28 +66,42 @@ Se utilizará notación estándar siempre que sea posible.
 
 Ejemplos:
 
-\[
+$$
 \mathbb Z,\qquad
 \mathbb Q,\qquad
 \mathbb R,\qquad
 \mathbb C.
-\]
+$$
 
-Para un cuerpo numérico \(K\):
+Para un cuerpo numérico $K$,
 
-\[
+$$
 \mathcal O_K
-\]
+$$
 
 denotará su anillo de enteros.
 
 La norma y la traza se escribirán como:
 
-\[
+$$
 N_{K/\mathbb Q}(\alpha),
 \qquad
 \operatorname{Tr}_{K/\mathbb Q}(\alpha).
-\]
+$$
+
+Para expresiones cortas dentro del texto se utilizará notación matemática en línea. Por ejemplo:
+
+```markdown
+Sea $K/\mathbb Q$ una extensión finita.
+```
+
+Para expresiones destacadas se utilizarán bloques matemáticos:
+
+```markdown
+$$
+[K:\mathbb Q]=n.
+$$
+```
 
 ---
 
