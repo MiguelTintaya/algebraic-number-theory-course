@@ -1,116 +1,113 @@
 # Algebraic Preliminaries
 
-Esta unidad reúne los prerrequisitos algebraicos necesarios para comenzar el estudio sistemático de Teoría Algebraica de Números.
+Esta unidad reúne los fundamentos algebraicos y de teoría de cuerpos necesarios para comenzar el estudio sistemático de **Teoría Algebraica de Números**.
+
+Los preliminares se dividen en dos partes principales.
 
 ---
 
-## Objectives
+## Part I — Algebraic Foundations
 
-Al finalizar esta unidad, el estudiante debería poder:
+La primera parte desarrolla las estructuras algebraicas básicas utilizadas durante todo el curso.
 
-- trabajar con dominios integrales;
-- distinguir PID y UFD;
-- utilizar factorización en anillos;
-- estudiar polinomios sobre cuerpos;
-- aplicar criterios básicos de irreducibilidad;
-- trabajar con extensiones finitas de cuerpos;
-- calcular grados de extensiones;
-- comprender extensiones de Galois;
-- utilizar la correspondencia fundamental de Galois.
+### Topics
+
+- Integral domains
+- Divisibility
+- Irreducible and prime elements
+- Euclidean domains
+- Principal ideal domains
+- Unique factorization domains
+- Ideals
+- Polynomial irreducibility
+
+Material:
+
+[`01-algebraic-foundations/`](01-algebraic-foundations/)
 
 ---
 
-## Contents
+## Part II — Polynomials and Field Extensions
 
-### 0.1 Integral Domains
+La segunda parte desarrolla la teoría de cuerpos necesaria para estudiar posteriormente cuerpos numéricos, extensiones de Galois y anillos de enteros.
 
-- divisibilidad;
-- unidades;
-- irreducibles;
-- elementos primos;
-- factorización.
+### Topics
 
-### 0.2 Principal Ideal Domains and UFDs
+- Polynomial rings
+- Algebraic elements
+- Field extensions
+- Minimal polynomials
+- Finite extensions
+- Simple extensions
+- Tower law
+- Embeddings
+- Automorphisms
+- Separability
+- Normal extensions
+- Splitting fields
+- Galois theory
 
-- ideales principales;
-- PID;
-- UFD;
-- relación entre elementos primos e irreducibles.
+Material:
 
-### 0.3 Polynomial Rings
-
-- polinomios sobre cuerpos;
-- división euclídea;
-- irreducibilidad;
-- criterios de irreducibilidad.
-
-### 0.4 Field Extensions
-
-- extensiones algebraicas;
-- extensiones finitas;
-- grado;
-- polinomio mínimo;
-- ley de la torre.
-
-### 0.5 Galois Theory
-
-- automorfismos;
-- extensiones normales;
-- extensiones separables;
-- extensiones de Galois;
-- grupo de Galois;
-- correspondencia de Galois.
+[`02-polynomials-and-field-extensions/`](02-polynomials-and-field-extensions/)
 
 ---
 
 ## Dependency map
 
-```text
-Integral Domains
-       │
-       ▼
-   PID / UFD
-       │
-       ▼
-Polynomial Rings
-       │
-       ▼
-Irreducibility
-       │
-       ▼
-Field Extensions
-       │
-       ▼
-Galois Theory
-       │
-       ▼
-Algebraic Number Theory
+```mermaid
+flowchart TD
+    A[Integral Domains] --> B[Euclidean Domains]
+    B --> C[Principal Ideal Domains]
+    C --> D[Unique Factorization Domains]
+    D --> E[Polynomial Irreducibility]
+
+    E --> F[Polynomial Rings]
+    F --> G[Algebraic Elements]
+    G --> H[Field Extensions]
+    H --> I[Minimal Polynomials]
+    I --> J[Finite Extensions]
+    J --> K[Embeddings]
+    K --> L[Separability]
+    L --> M[Normal Extensions]
+    M --> N[Galois Theory]
+
+    N --> O[Algebraic Number Theory]
 ```
 
 ---
 
-## Progress
+## Learning objectives
 
-- [ ] Integral domains
-- [ ] PID and UFD
-- [ ] Polynomial rings
-- [ ] Irreducibility
-- [ ] Finite field extensions
-- [ ] Galois extensions
-- [ ] Galois correspondence
+Al finalizar estos preliminares, el estudiante debería ser capaz de:
+
+- trabajar con dominios, ideales y factorización;
+- distinguir dominios euclídeos, PID y UFD;
+- analizar irreducibilidad de polinomios;
+- trabajar con extensiones finitas de cuerpos;
+- calcular polinomios minimales;
+- utilizar la fórmula de la torre;
+- comprender inmersiones y automorfismos;
+- reconocer extensiones separables y normales;
+- trabajar con cuerpos de descomposición;
+- utilizar los fundamentos de la teoría de Galois.
 
 ---
 
-## Exercises
+## Next step
 
-Los ejercicios correspondientes a esta unidad estarán disponibles en:
+Una vez completados estos preliminares, el curso continúa con los objetos centrales de Teoría Algebraica de Números:
 
-```text
-exercises/00-preliminaries/
+```mermaid
+flowchart LR
+    A[Number Fields] --> B[Algebraic Integers]
+    B --> C[Rings of Integers]
+    C --> D[Norm and Trace]
+    D --> E[Discriminants]
+    E --> F[Dedekind Domains]
 ```
 
-Las soluciones estarán separadas en:
+Consulta también:
 
-```text
-solutions/00-preliminaries/
-```
+- [`ROADMAP.md`](../../ROADMAP.md)
+- [`SYLLABUS.md`](../../SYLLABUS.md)
